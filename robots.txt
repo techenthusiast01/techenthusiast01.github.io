@@ -1,0 +1,6 @@
+User-agent: *
+Allow: / 
+Sitemap: sitemap (1).xml
+Sitemap: 
+Allow: https://techenthusiast01.github.io/
+Allow: 
