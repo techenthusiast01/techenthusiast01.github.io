@@ -1,343 +1,449 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  
-<meta name="google-site-verification" content="D2zfhABeK2WJbUC3zODrWI5_08ID2O0YIQxx1jbEpsA" />
+
+  <meta name="google-site-verification" content="D2zfhABeK2WJbUC3zODrWI5_08ID2O0YIQxx1jbEpsA" />
 
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="insert image here" type="image/icon type"> <!--website logo-->
+  <link rel="icon" href="insert image here" type="image/icon type"> <!--website logo-->
 
   <title> Tech Enthusiast </title>
 
-<meta name="title" content=" Tech Enthusiast">
+  <meta name="title" content=" Tech Enthusiast">
 
-<meta name="description" content=" Digital Marketing Specialist.">
+  <meta name="description" content=" Digital Marketing Specialist.">
 
-<meta name="keywords" content="Tech Enthusiast, Digital Marketing">
+  <meta name="keywords" content="Tech Enthusiast, Digital Marketing">
 
-<meta name="author" content=" Tech Enthusiast">
+  <meta name="author" content=" Tech Enthusiast">
 
-<meta name="robots" content="index, follow"> 
+  <meta name="robots" content="index, follow">
 
-<meta name="revisit-after" content="7 days"> 
+  <meta name="revisit-after" content="7 days">
 
-<meta name="language" content="English">
+  <meta name="language" content="English">
 
-<!-- For Facebook, Whatsapp, Instagram --> 
-<meta name="og:title" content="Tech Enthusiast">
+  <!-- For Facebook, Whatsapp, Instagram -->
+  <meta name="og:title" content="Tech Enthusiast">
 
-<meta name="og:type" content="resume">
+  <meta name="og:type" content="resume">
 
-<meta name="og:description" content="Digital Marketing Specialist.">
+  <meta name="og:description" content="Digital Marketing Specialist.">
 
-<meta name="og:site_name" content="Tech Enthusiast"> 
+  <meta name="og:site_name" content="Tech Enthusiast">
 
-<meta name="og:image" content="https://github.com/techenthusiast01/techenthusiast01.github.io/blob/main/assests/20231002_211320_0000.png">
+  <meta name="og:image" content="https://github.com/techenthusiast01/techenthusiast01.github.io/blob/main/assests/20231002_211320_0000.png">
 
-<meta name="og:url" content="https://techenthusiast01.github.io/">
+  <meta name="og:url" content="https://techenthusiast01.github.io/">
 
-<!-- For Twitter --> 
-<meta name="twitter:title" content=" Tech Enthusiast"> 
- 
-<meta name="twitter:description" content="Digital Marketing Specialist.">
+  <!-- For Twitter -->
+  <meta name="twitter:title" content=" Tech Enthusiast">
 
-<meta name="twitter:image" content="URL to your website logo or a relevant image">
+  <meta name="twitter:description" content="Digital Marketing Specialist.">
 
-<meta name="twitter:card" content="summary_large_image"> 
+  <meta name="twitter:image" content="URL to your website logo or a relevant image">
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap (1).xml">
+  <meta name="twitter:card" content="summary_large_image">
 
-<link rel="canonical" href="https://techenthusiast01.github.io/">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap (1).xml">
 
+  <link rel="canonical" href="https://techenthusiast01.github.io/">
 
-
-/* Add styling for the social sharing buttons */
-
-/* Social Sharing Styles */
-.social-sharing {
-    margin-top: 20px;
-}
-
-.share-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.2s ease;
-}
-
-.share-button.facebook {
-    background-color: #1877f2; /* Facebook color */
-}
-
-.share-button.whatsapp {
-    background-color: #25d366; /* WhatsApp color */
-}
-
-.share-button.messenger {
-    background-color: #0084FF; /* Facebook Messenger color */
-}
-
-.share-button:hover {
-    background-color: #333;
-}
-
-@media (max-width: 768px) {
-    /* Media query for mobile devices */
-    .share-button {
-      display: block; /* Stack buttons vertically on small screens */
-      margin-bottom: 10px; /* Add spacing between buttons */
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif
     }
-  }
 
-    </style>
-  </head>
+    header {
+      background-color: w3-teal;
+      text-align: center;
+    }
+
+    .navbar {
+
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change the color of the links when hovered */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Style for the Home, Resume and Blog sections */
+    .section {
+      display: none;
+    }
+
+    /* Show the selected section */
+    .section.active {
+      display: block;
+    }
+    
+    #services{
+          text-align: center;
+    }
+    
+
+    /* Add styling for the social sharing buttons */
+    /* Social Sharing Styles */
+    .social-sharing {
+      margin-top: 20px;
+    }
+
+    .share-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+
+    .share-button.facebook {
+      background-color: #1877f2;
+      /* Facebook color */
+    }
+
+    .share-button.whatsapp {
+      background-color: #25d366;
+      /* WhatsApp color */
+    }
+
+    .share-button.messenger {
+      background-color: #0084FF;
+      /* Facebook Messenger color */
+    }
+
+    .share-button:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      /* Media query for mobile devices */
+      .share-button {
+        display: block;
+        /* Stack buttons vertically on small screens */
+        margin-bottom: 10px;
+        /* Add spacing between buttons */
+      }
+    }
+  </style>
+</head>
 
 <body class="w3-light-grey">
-  
-<div class="w3-bar w3-teal">
-  <h2 class="w3-center"> Portfolio: Web Based Resume </h2>
-  <a href="#skills" class="w3-bar-item w3-button">Skills</a>
-  <a href="#languages" class="w3-bar-item w3-button">Languages</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#education" class="w3-bar-item w3-button">Education</a>
-  <a href="#hobbies" class="w3-bar-item w3-button">Hobbies and Interests</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-  
-  
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          
-          <div >
-            <h2> Tech Enthusiast</h2>
-          </div>
-        </div>
-        
-        <div class="w3-container">
-          <p><i class=" fa fa-suitcase fa-fw w3-margin-right w3-large w3-text-teal "></i> Digital Marketing Specialist </p>
-          <div class="w3-container">
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> September 2023 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p> A passionate and versatile digital enthusiast with a keen interest in the dynamic worlds of digital marketing and web design. </p>
-          </div>
-
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i> Sylhet , Bangladesh </p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i> </p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
-          
-          <hr>
-
-          <p class="w3-large" id="skills"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i> Skills </b></p>
-
-<div class="w3-container">
-  <h4 class="w3-opacity" style="color:black;"><b> Marketing Skills </b></h4>
-
-  <p>SEO Optimization</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+  <div class="w3-bar w3-teal">
+    <h2 class="w3-center">Tech Enthusiast</h2>
+    <div class="navbar">
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('resume')">Resume</a>
+  <a href="#" onclick="showSection('contact')"> Contact </a>
+    </div>
   </div>
-</div>
 
-          <div class="w3-container">
-            <h4 class="w3-opacity" style="color:black;"> <b> Programming Skills  </b></h4>
+  <!-- Start home -->
+          <div class="section" id="home">  
+    <!-- Navigation Bar for Services -->
+    <div class="w3-bar w3-teal">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#services" class="w3-bar-item w3-button">Services</a>
+   <div class="w3-container">
+       <h2 class="w3-center"> Portfolio Website</h2>
+   </div>
+   
+    </div> <!-- End Navbar -->
 
-          <p> HTML </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%"> 90% </div>
-          </div>
-          
-          <p> CSS </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide"> About Me </h2>
+      <p class= "w3-center">
+      I am a passionate tech enthusiast with a deep love for all things related to technology.
+      <br> <br>
+      I am dedicated to exploring the latest trends and innovations in the digital world, from digital marketing strategies to web development. 
+      <br> <br>
+      My goal is to stay at the forefront of technology and upgrade my skills. 
+            <br> <br>
+      Using my knowledge and skills, I intend to serve my clients and help them to achieve their business goals and stay competitive in today's fast-paced digital landscape.
+            <br> <br>
+      Additionally, I specialize in creating user-friendly and easily navigable websites.
+      <p>
+    </section>
 
-          <p> C++ </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
-          </div>
+    <!-- Services Section -->
+    <section id="services" class="w3-container w3-padding-32">
+      <h1 class="w3-center">Services</h1>
+        <h3 class="w3-wide">Marketing Services</h3>
+        <p>Running Facebook Ads </p>
+        <p>SEO</p>
+        <p>Email Marketing </p>
+        
+        <h3 class="w3-wide">Web Development Services</h3>
+        <p>Static Website</p>
+        <p>Dynamic Website</p>
+        <p>Responsive Website</p>
+    </section>
 
-          <p> C Programming </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
-          </div>
 
-          <p> Python </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%"> In Progress </div>
-          </div>
-          </div> <!--End of Programming skills-->
+  </div> <!-- End home -->
 
-          <div class="w3-container">
-            <h4 class="w3-opacity" style="color:black;"> <b> Other Skills  </b></h4>
+  <!-- Start resume -->
+  <div class="section active" id="resume">
+            <div class="w3-bar w3-teal">
+      <a href="#skills" class="w3-bar-item w3-button">Skills</a>
+      <a href="#languages" class="w3-bar-item w3-button">Languages</a>
+      <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+      <a href="#education" class="w3-bar-item w3-button">Education</a>
+      <a href="#hobbies" class="w3-bar-item w3-button">Hobbies and Interests</a>
+       <div class="w3-container">
+       <h2 class="w3-center"> Portfolio: Web Based Resume </h2>
+   </div>
+   </div>
 
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">
-              <div class="w3-center w3-text-white"> 50% </div>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+        <!-- Left Column -->
+        <div class="w3-third">
+
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+
+              <div>
+                <h2> Tech Enthusiast</h2>
+              </div>
+            </div>
+
+            <div class="w3-container">
+              <p><i class=" fa fa-suitcase fa-fw w3-margin-right w3-large w3-text-teal "></i> Digital Marketing Specialist </p>
+              <div class="w3-container">
+                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> September 2023 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                <p> A passionate and versatile digital enthusiast with a keen interest in the dynamic worlds of digital marketing and web design. </p>
+              </div>
+
+              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i> Sylhet, Bangladesh </p>
+              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i> </p>
+              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
+
+              <hr>
+
+              <p class="w3-large" id="skills"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i> Skills </b></p>
+
+              <div class="w3-container">
+                <h4 class="w3-opacity" style="color:black;"><b> Marketing Skills </b></h4>
+
+                <p>SEO Optimization</p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+                </div>
+              </div>
+
+              <div class="w3-container">
+                <h4 class="w3-opacity" style="color:black;"> <b> Programming Skills  </b></h4>
+
+                <p> HTML </p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%"> 90% </div>
+                </div>
+
+                <p> CSS </p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
+                </div>
+
+                <p> C++ </p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
+                </div>
+
+                <p> C Programming </p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
+                </div>
+
+                <p> Python </p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%"> In Progress </div>
+                </div>
+              </div> <!--End of Programming skills-->
+
+              <div class="w3-container">
+                <h4 class="w3-opacity" style="color:black;"> <b> Other Skills  </b></h4>
+
+                <p>Photography</p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">
+                    <div class="w3-center w3-text-white"> 50% </div>
+                  </div>
+                </div>
+
+                <p> Video Editing </p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
+                </div>
+              </div>
+
+                <p> Adobe Photoshop</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">
+                  <div class="w3-center w3-text-white"> 30% </div>
+                </div>
+              </div>
+              <br>
+
+              <p class="w3-large w3-text-theme" id="languages"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i> Languages </b></p>
+
+              <p> English </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
+              </div>
+
+              <p> Bengali </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
+              </div>
+
+              <p> Hindi </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%"> 85% </div>
+              </div>
+              <br>
+            </div>
+          </div><br>
+
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+            <h2 class="w3-text-grey w3-padding-16" id="portfolio"><i class="fa fa-gear fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Portfolio   </h2>
+
+            <div class="w3-container">
+
+              <div class="w3-row-padding">
+                <h3> I created a blogpost. </h3>
+                <h2> Analysis of the blogpost </h2>
+
+                <div class="w3-third">
+                  <img src="assests/Screenshot_2023-10-03-21-39-32-246_com.android.chrome~2.jpg" style="width:95%" alt="SEO Analysis">
+                  <p> SEO Analysis</p>
+                </div>
+
+                <div class="w3-third">
+                  <img src="assests/Screenshot_2023-10-03-21-40-37-208_com.android.chrome~2.jpg" style="width:95%" alt=" Readability Analysis">
+                  <p> Readability analysis</p>
+                </div>
+
+              </div>
+
+              <h5 class="w3-text-teal" id="education"><i class="fa fa-code fa-fw w3-margin-right"></i>  <b> <a href= "https://dev-tech-enthusiast.pantheonsite.io/2023/10/03/digital-marketing-strategies/" target="_blank"> View the blogpost </a>  </b> </h5>
+              <br>
             </div>
           </div>
 
-          <p> Video Editing </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
-          </div> 
-          </div>
+          <!--Education-->
+          <div class="w3-container w3-card w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Education </h2>
 
- <p> Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">
-              <div class="w3-center w3-text-white"> 30% </div>
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Ongoing </h6>
+              <p> Certification in Digital Marketing</p>
+              <hr>
+            </div>
+
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b> Great Learning  </b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Only 2023 </h6>
+              <p> Certification in SEO </p>
+              <hr>
+            </div>
+
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b> Great Learning  </b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Only 2022 </h6>
+              <p> Certification in HTML  </p>
+              <hr>
             </div>
           </div>
-          <br>
 
-          <p class="w3-large w3-text-theme" id="languages"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i> Languages </b></p>
+          <!--Hobbies and Interests-->
+          <div class="w3-container w3-card w3-white"> <br>
 
-          <p> English </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
+            <h2 class="w3-text-grey w3-padding-16" id="hobbies"><i class="fa fa-star fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Hobbies and Interests </h2>
+
+            <p> Reading Books </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">
+                <div class="w3-center w3-text-white"> 100% </div>
+              </div>
+            </div>
+
+            <p> Gardening </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
+            </div>
+
+            <p> Games and Sports </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
+            </div>
+
+            <p> Traveling  </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
+            </div>
+
+            <p> Baking Cakes </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
+            </div>
+
+            <p> Cooking </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
+            </div>
+            <br>
           </div>
-
-          <p> Bengali </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
-          </div>
-
-          <p> Hindi </p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%"> 85% </div>
-          </div>
-          <br>
         </div>
-      </div><br>
 
-    <!-- End Left Column -->
-    </div>
+      </div>  <!-- End Grid -->
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      
-       <div class="w3-container w3-card w3-white w3-margin-bottom"> 
-        
-        <h2 class="w3-text-grey w3-padding-16" id="portfolio"><i class="fa fa-gear fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Portfolio   </h2>
+    </div>  <!-- End Page Container -->
 
-        <div class="w3-container">
-
-<div class="w3-row-padding">
-  <p> I created a blogpost. </p>
-<h3> Analysis of the blogpost </h3>
+  </div>  <!-- End resume -->
   
-  <div class="w3-third">
-      <img src="assests/Screenshot_2023-10-03-21-39-32-246_com.android.chrome~2.jpg" style="width:95%" alt="SEO Analysis">
-<p> SEO Analysis</p>
-    </div>
-
-  <div class="w3-third">
-      <img src="assests/Screenshot_2023-10-03-21-40-37-208_com.android.chrome~2.jpg" style="width:95%" alt=" Readability Analysis">
-<p> Readability analysis</p>
-    </div>
-
-  </div>
-
-          <h5 class="w3-text-teal" id="education"><i class="fa fa-code fa-fw w3-margin-right"></i>  <b> <a href= "https://dev-tech-enthusiast.pantheonsite.io/2023/10/03/digital-marketing-strategies/" target="_blank"> View the blogpost </a>  </b> </h5>
-          <br>
-        </div>
-      </div> 
-
-      <!--Education-->
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Education </h2>
-
-<div class="w3-container">
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Ongoing </h6>
-          <p> Certification in Digital Marketing</p>
-          <hr>
-        </div>
-
-<div class="w3-container">
-          <h5 class="w3-opacity"><b> Great Learning  </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Only 2023 </h6>
-          <p> Certification in SEO </p>
-          <hr>
-        </div>
-         
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b> Great Learning  </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Only 2022 </h6>
-          <p> Certification in HTML  </p>
-          <hr>
-        </div>
-      </div>
-
-      <!--Hobbies and Interests-->
-      <div class="w3-container w3-card w3-white"> <br> 
-        
-        <h2 class="w3-text-grey w3-padding-16" id="hobbies"><i class="fa fa-star fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Hobbies and Interests </h2>
-       
-      <p> Reading Books </p>
-      <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">
-          <div class="w3-center w3-text-white"> 100% </div>
-        </div>
-      </div>
-      
-      <p> Gardening </p>
-      <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
-      </div>
-
-      <p> Games and Sports </p>
-      <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
-      </div>
-
-      <p> Traveling  </p>
-      <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
-      </div>
-
-      <p> Baking Cakes </p>
-      <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%"> 100% </div>
-      </div>
-
-      <p> Cooking </p>
-      <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%"> 50% </div>
-      </div>
-      <br>
-    </div>
-  </div>
-
-       </div>        <!-- End Right Column -->
-    
- </div>  <!-- End Grid -->
-  
-</div>  <!-- End Page Container -->
-
-
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
 
 <div class="w3-container"> <br> 
 <h2 class= "w3-content w3-center"> Sharing is Caring!</h2> 
@@ -375,5 +481,24 @@ buttons. Thank you for your support</p>
  <!-- End footer -->
  </footer>
 
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      var sections = document.getElementsByClassName('section');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+      }
+
+      // Show the selected section
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Automatically show the 'resume' section when the page loads
+    window.onload = function () {
+      showSection('resume');
+    };
+  </script>
 </body>
-  </html>
+            </html>
+  
+                
