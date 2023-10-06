@@ -5,5 +5,8 @@
 # Only allow scripts to be loaded from the same origin.
 # For more advanced CSP configurations, refer to the CSP documentation.
 
-/* 
-Content-Security-Policy: default-src 'self';
+/*
+  Content-Security-Policy: default-src 'self';
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
