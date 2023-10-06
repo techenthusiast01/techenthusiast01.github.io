@@ -1,0 +1,9 @@
+# Content Security Policy
+# This header helps prevent Cross-Site Scripting (XSS) attacks
+# by specifying which scripts are allowed to run.
+#
+# Only allow scripts to be loaded from the same origin.
+# For more advanced CSP configurations, refer to the CSP documentation.
+
+/* 
+Content-Security-Policy: default-src 'self';
