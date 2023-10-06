@@ -165,8 +165,8 @@
   <div class="w3-bar w3-teal">
     <h2 class="w3-center">Tech Enthusiast</h2>
     <div class="navbar">
-      <a href="#" onclick="showSection('home')">Home</a>
-      <a href="#" onclick="showSection('resume')">Resume</a>
+    <a href="javascript:void(0);" onclick="showSection('home')">Home</a>
+<a href="javascript:void(0);" onclick="showSection('resume')">Resume</a>
   <a href="#" onclick="showSection('contact')"> Contact </a>
     </div>
   </div>
@@ -486,22 +486,28 @@ buttons. Thank you for your support</p>
  </footer>
 
   <script>
-    function showSection(sectionId) {
-      // Hide all sections
-      var sections = document.getElementsByClassName('section');
-      for (var i = 0; i < sections.length; i++) {
-        sections[i].style.display = 'none';
-      }
-
-      // Show the selected section
-      document.getElementById(sectionId).style.display = 'block';
+  function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.getElementsByClassName('section');
+    for (var i = 0; i < sections.length; i++) {
+      sections[i].style.display = 'none';
     }
 
-    // Automatically show the 'resume' section when the page loads
-    window.onload = function () {
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
+
+    // Set 'resume' as the default section when Home is clicked
+    if (sectionId === 'home') {
       showSection('resume');
-    };
+    }
+  }
+
+  // Automatically show the 'resume' section when the page loads
+  window.onload = function () {
+    showSection('resume');
+  };
   </script>
+  
 </body>
             </html>
   
