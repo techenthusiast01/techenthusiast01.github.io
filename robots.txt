@@ -1,5 +1,9 @@
 User-agent: *
-Allow: / 
+Disallow: /insert/
+Disallow: /assets/
+Disallow: /whatsapp://send/
+Disallow: /fb-messenger://share/
+Allow: /index.html
 Sitemap: sitemap (1).xml
 Sitemap: https://github.com/techenthusiast01/techenthusiast01.github.io/blob/main/sitemap%20(1).xml
 Allow: https://techenthusiast01.github.io/
